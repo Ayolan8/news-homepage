@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 1019pX;
-    margin-top: -40px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -272,12 +272,6 @@ main{
         grid-template-columns: 100%;
     }
 
-    .fixed {
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-
     nav {
         width: 70%;
         flex-direction: column;
@@ -318,7 +312,7 @@ main{
     .item2 {
         grid-area: new;
         gap: 1.5em;
-        padding: 1.8em 2.5em 0 1em;
+        padding: 1.8em 2.5em 1em 1em;
     }
 
     .item3 {
@@ -338,6 +332,12 @@ main{
 
     .transparent-bg{
         background: rgba(0,0,0,0.5);
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
     }
     
 }

@@ -31,8 +31,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 1019pX;
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 nav {

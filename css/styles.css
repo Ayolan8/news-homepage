@@ -70,7 +70,7 @@ nav > a:hover {
 .item1b{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: .5em;
+    grid-column-gap: 2em;
 }
 
 .item1b div > h1 {

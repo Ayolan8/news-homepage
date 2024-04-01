@@ -69,8 +69,8 @@ nav > a:hover {
 
 .item1b{
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    grid-column-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5em;
 }
 
 .item1b div > h1 {
@@ -137,7 +137,7 @@ nav > a:hover {
     line-height: 22px;
     font-size: 15px;
 }
-
+b
 .item2a {
     display: flex;
     flex-direction: column;

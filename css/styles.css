@@ -21,7 +21,6 @@ body{
     font-family: Inter, sans-serif;
     font-size: 15px;
     background-color: var(--Off-white);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,19 +70,19 @@ nav > a:focus {
 .item1b{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2em;
+    /* grid-column-gap: .7em; */
 }
 
 .item1b div > h1 {
     font-size: 3.6em;
-    line-height: 47px;
+    line-height: 53px;
 }
 
 .item1b div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2em;
+    justify-content: space-between;
+    /* gap: 2em; */
 }
 
 .item1b button {
@@ -111,7 +110,7 @@ nav > a:focus {
     grid-column: 3;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px, auto);
-    padding: 2em 1.5em;
+    padding: 2em 1.3em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -223,9 +222,6 @@ main{
 
 @media screen and (max-width: 1024px) {  
 
-    body{
-        height: 100%;
-    }
 
     main{
         grid-template-columns: repeat(3, 270px); 

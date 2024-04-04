@@ -1,14 +1,15 @@
 :root {
-    /* primary color */
+    /* Define primary colors */
     --soft-orange: hsl(35, 77%, 62%);
     --soft-red: hsl(5, 85%, 63%);
-    /* neutral color */
+    /* Define neutral colors */
     --Off-white: hsl(36, 100%, 99%);
     --Grayish-blue: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
+/* Apply box-sizing to all elements */
 *,
 *::before,
 *::after {
@@ -17,6 +18,7 @@
     margin: 0;
 }
 
+/* Set body styles */
 body{
     font-family: Inter, sans-serif;
     font-size: 15px;
@@ -28,10 +30,12 @@ body{
     align-items: center;
 }
 
+/* Remove underline from links */
 a {
     text-decoration: none;
 }
 
+/* Set header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -41,21 +45,25 @@ header {
     margin-bottom: 2.3em;
 }
 
+/* Set navigation styles */
 nav {
     display: flex;
     justify-content: space-between;
     width: 410px;
 }
 
+/* Set color for navigation links */
 nav > a {
     color: var(--dark-grayish-blue);
 }
 
+/* Change color of navigation links on hover and focus */
 nav > a:hover,
 nav > a:focus {
     color: var(--soft-orange);
 }
 
+/* Set grid properties for .item1 */
 .item1{
     grid-column: 1 / 3;
     display: grid;
@@ -63,22 +71,26 @@ nav > a:focus {
     grid-row-gap: 1em;
 }
 
+/* Set image properties for .item1 */
 .item1 img{
     height: 270px;
     width: 100%;
 }
 
+/* Set grid properties for .item1b */
 .item1b{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
 }
 
+/* Set font properties for h1 in .item1b */
 .item1b div > h1 {
     font-size: 3.6em;
     line-height: 47px;
 }
 
+/* Set flex properties for second child div in .item1b */
 .item1b div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -86,6 +98,7 @@ nav > a:focus {
     gap: 2em;
 }
 
+/* Set button properties in .item1b */
 .item1b button {
     width: 170px;
     height: 42px;
@@ -98,15 +111,18 @@ nav > a:focus {
     font-weight: 400;
 }
 
+/* Change button background color on hover in .item1b */
 .item1b button:hover{
     background-color: var(--Very-dark-blue);
 }
 
+/* Set paragraph properties in .item1b */
 .item1b p {
     color: var(--dark-grayish-blue);
     line-height: 21px;
 }
 
+/* Set grid properties for .item2 */
 .item2 {
     grid-column: 3;
     grid-template-columns: 1fr;
@@ -118,28 +134,33 @@ nav > a:focus {
     background-color: var(--Very-dark-blue);
 }
 
+/* Set h1 properties for .item2 */
 .item2 > h1 {
     color: var(--soft-orange);
     font-size: 32px;
     margin-bottom: 1em;
 }
 
+/* Set h2 properties for .item2a */
 .item2a  h2 {
     color: var(--Grayish-blue);
     font-size: 19px;
 }
 
+/* Change h2 color on hover and focus in .item2a */
 .item2a  h2:hover,
 .item2a h2:focus{
     color: var(--soft-orange)
 }
 
+/* Set paragraph properties for .item2a */
 .item2a  p {
     color: var(--dark-grayish-blue);
     line-height: 22px;
     font-size: 15px;
 }
 
+/* Set flex properties for .item2a */
 .item2a {
     display: flex;
     flex-direction: column;
@@ -147,18 +168,21 @@ nav > a:focus {
     justify-content: space-between;
 }
 
+/* Set flex properties for .item2-inner-class in .item2a */
 .item2a > .item2-inner-class {
     display: flex;
     flex-direction: column;
     gap: .4em;
 }
 
+/* Set properties for .hr */
 .hr{
     background-color: var(--dark-grayish-blue);
     width: 100%;
     height: 1px;
 }
 
+/* Set grid properties for .item3 */
 .item3 {
     grid-column-start: 1;
     grid-column-end:  4;
@@ -168,41 +192,49 @@ nav > a:focus {
     
 }
  
+/* Set flex properties for div in .item3 */
 .item3 > div {
     display: flex;
     justify-content: space-between;
     gap: 1em;
 }
 
+/* Set image properties for .footer-img */
 .footer-img img {
     width: 150px;
 }
 
+/* Set paragraph properties for .item3 */
 .item3 p{
     color: var(--dark-grayish-blue);
     line-height: 20px;
     font-weight: 200;
 }
 
+/* Set h1 properties for .item3 */
 .item3 h1 {
     color: var(--Grayish-blue);
 }
 
+/* Set color for h3 in a in .item3 */
 .item3 a:has(> h3){
     color: var(--Very-dark-blue);
 }
 
+/* Change color of h3 on hover and focus in .item3 */
 .item3 h3:hover,
 .item3 h3:focus {
     color: var(--soft-red);
 }
 
+/* Set flex properties for div in .footer-img */
 .footer-img > div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* Set grid properties for main */
 main{
     display: grid;
     grid-template-columns: repeat(3, 320px); 
@@ -210,18 +242,26 @@ main{
     grid-row-gap: 3em;
 }
 
+/* Hide .hidden-on-laptop on laptop */
 .hidden-on-laptop{
     display: none;
     width: 100%;
 }
 
+/* Set properties for .attribution */
 .attribution{
     background-color: var(--Grayish-blue);
     text-align: center;
     width: 100%;
 }
 
+/* Set media queries for different screen sizes */
 @media screen and (max-width: 1024px) {  
+
+    body{
+        height: 100%;
+    }
+
     main{
         grid-template-columns: repeat(3, 270px); 
         grid-column-gap: 1.5em;
@@ -347,88 +387,4 @@ main{
     main {
         grid-template-areas: 'header' ' new' 'bottom';
         width: 100%;
-        grid-template-columns: 100%;
-        /* grid-column-gap: 2em; */
-        grid-row-gap: 3em;
-    }
-
-    nav {
-        width: 70%;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100vh;
-        padding: 9.5em 0 0 1em;
-        display: none;
-        background-color: var(--Off-white);
-        transition: 0.9s;
-    }
-
-    nav a {
-        margin-bottom: 1.8em;
-        color: var(--Very-dark-blue);
-    }
-
-    .item1 {
-        grid-area: header;
-        width: 100%;
-    }
-
-    .item1 img{
-        height: 270px;
-    }
-
-    .item1b {
-        grid-template-columns: 100%;
-        grid-column-gap: 0;
-        grid-row-gap: .2em;
-    }
-
-    .item1b div > h1 {
-        font-size: 2.8em;
-        /* line-height: 40px; */
-        /* letter-spacing: -px; */
-    }
-
-    .item2 {
-        grid-area: new;
-        gap: 1.5em;
-    }
-
-    .item3 {
-        grid-area: bottom;
-        grid-template-columns: 1fr;
-        grid-row-gap: 2em;
-        /* grid-column-gap: 2em; */
-    }
-
-    .item3 > div {
-        gap: 2.25em;
-    }
-
-    .item1b {
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .transparent-bg{
-        background: rgba(0,0,0,0.5);
-    }
-
-    .fixed {
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-    
-}
-
-@media screen and (max-width: 400px) {
-    .item1b{
-        grid-template-columns: 320px;
-    }
-}
-
-@media screen and (max-width: 290px) {
-    .item1b{
-        grid-template-columns: 100%;
-    }
-}
+        grid-template

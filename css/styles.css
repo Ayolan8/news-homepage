@@ -21,7 +21,7 @@ body{
     font-family: Inter, sans-serif;
     font-size: 15px;
     background-color: var(--Off-white);
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,8 +221,7 @@ main{
     width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-    
+@media screen and (max-width: 1024px) {  
     main{
         grid-template-columns: repeat(3, 270px); 
         grid-column-gap: 1.5em;
@@ -422,8 +421,14 @@ main{
     
 }
 
-@media screen and (max-width: 400px){
-    .item1b {
+@media screen and (max-width: 400px) {
+    .item1b{
         grid-template-columns: 320px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .item1b{
+        grid-template-columns: 100%;
     }
 }

@@ -170,7 +170,7 @@ nav > a:focus {
 .item3 > div {
     display: flex;
     justify-content: space-between;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .footer-img img {
@@ -180,7 +180,6 @@ nav > a:focus {
 .item3 p{
     color: var(--dark-grayish-blue);
     line-height: 20px;
-    font-weight: 200;
 }
 
 .item3 h1 {
@@ -205,8 +204,8 @@ nav > a:focus {
 main{
     display: grid;
     grid-template-columns: repeat(3, 320px); 
-    grid-column-gap: 1.5em;
-    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
 }
 
 .hidden-on-laptop{

@@ -59,7 +59,7 @@ nav > a:focus {
     grid-column: 1 / 3;
     display: grid;
     grid-auto-rows: minmax(100px, auto);
-    grid-row-gap: 1em;
+    /* grid-row-gap: 1em; */
 }
 
 .item1 img{
@@ -70,7 +70,7 @@ nav > a:focus {
 .item1b{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-column-gap: .7em; */
+    grid-column-gap: 2em;
 }
 
 .item1b div > h1 {
@@ -82,7 +82,7 @@ nav > a:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 2em; */
+    gap: 2em;
 }
 
 .item1b button {
@@ -254,6 +254,10 @@ main{
 
     nav {
         width: 300px;
+    }
+
+    .item1{
+        grid-row-gap: 1em;
     }
 
     .item1 img{
